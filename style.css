@@ -1,9 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
-
-/* font-family: "Fraunces", serif; */
-/* font-family: "Montserrat", sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
 
 * {
   margin: 0;
@@ -11,14 +6,14 @@
   box-sizing: border-box;
 }
 
-.body {
+body {
   font-family: "Montserrat", sans-serif;
   background-color: hsl(30, 38%, 92%);
   font-size: 14px;
   min-height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -47,7 +42,7 @@
   justify-content: space-between;
 }
 
-.pro-cat {
+h6.pro-cat {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 13px;
@@ -55,14 +50,14 @@
   font-weight: 500;
 }
 
-.pro-name {
+h2.pro-name {
   font-family: "Fraunces", serif;
   font-size: 34px;
   line-height: 1em;
   color: hsl(212, 21%, 14%);
 }
 
-.pro-des {
+p.pro-des {
   color: hsl(228, 12%, 48%);
   line-height: 1.6em;
 }
@@ -84,24 +79,24 @@ p.old-price {
   text-decoration: line-through;
 }
 
-.cta {
+button.cta {
   background-color: hsl(158, 36%, 37%);
   border: none;
   padding: 14px 0;
   border-radius: 12px;
   color: white;
   font-size: 14px;
-  font-weight: 700px;
+  font-weight: 700;
   cursor: pointer;
-  transition: background-color 0.3 ease;
+  transition: background-color 0.3s ease;
   width: 100%;
 }
 
-.cta:hover {
-  background-color: hsl(158, 30%, 37%);
+button.cta:hover {
+  background-color: hsl(158, 36%, 23%);
 }
 
-.cta img {
+button.cta img {
   padding-right: 7px;
 }
 
@@ -109,7 +104,7 @@ p.old-price {
   .grid {
     grid-template-columns: 1fr;
   }
-  .img {
+  .img img {
     max-height: 450px;
     width: 100%;
     object-fit: cover;
@@ -130,34 +125,27 @@ p.old-price {
     margin: 15px auto;
     padding: 0 15px;
   }
-
   .img img {
     max-height: 290px;
   }
-
   .card-content {
     padding: 24px;
   }
-
   h6.pro-cat,
   h2.pro-name,
   p.pro-des,
   .price {
     padding-bottom: 16px;
   }
-
   h2.pro-name {
     font-size: 28px;
   }
-
   p.pro-des {
     font-size: 12px;
   }
-
   p.current-price {
     font-size: 23px;
   }
-
   button.cta {
     padding: 12px 0;
     font-size: 13px;
